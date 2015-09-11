@@ -1,4 +1,8 @@
-//alert('asdasdsd');
+/** use windows onload when we dont want to execute JS functions variables till AFTER the pages is loaded
+window.onload = function() {
+var ll = LinkedListGenerator();
+}
+*/
 
 var ll = (function() {
   //alert('asdas123123d:');
@@ -62,7 +66,7 @@ var ll = (function() {
         curNode = curNode.next;
       }
     }
-    return console.log(curNode);
+    return curNode;
   }
 
   function _remove(number) {

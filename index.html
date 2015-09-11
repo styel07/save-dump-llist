@@ -8,13 +8,22 @@
 
 <textarea id ='txtArea'>Enter Something</textarea>
 
-<button id ='btnSave' onclick='ll.add(); ll.get();'>Save</button>
+<button id ='btnSave' onclick='getOptions()'>Save</button>
 <button id ='btnDump' onclick='_remove()'>Dump</button>
 <p id="demo"></p>
 <script src="save-dump.js"></script>
 </body>
 </html>
 
+<script>
+function getOptions() {
+  var options = 'll.add(); ll.get()';
+  if (ll.get() !== null) {
+    options = 'll.add();';
+  }
+  return options;
+}
+</script>
 <!-- document.getElementById("btnSave").addEventListener("click", _add());
   function _add() {
   var x = document.getElementById('txtArea').value;
