@@ -8,19 +8,10 @@
 
 <textarea id ='txtArea'>Enter Something</textarea>
 
-<button id ='btnSave' onclick='ll.add()'>Save</button>
+<button id ='btnSave' onclick='ll.add(); ll.get();'>Save</button>
 <button id ='btnDump' onclick='_remove()'>Dump</button>
 <p id="demo"></p>
 <script src="save-dump.js"></script>
-<script>
-  function load() {
-    var x = getElementById('demo').value;
-    if (x !== null) {
-      alert(x);
-    }
-  }
-  window.onload = load;
-</script>
 </body>
 </html>
 

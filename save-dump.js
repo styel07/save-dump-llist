@@ -39,7 +39,6 @@ var ll = (function() {
       tail.next = newNode;
       tail = newNode;
     }
-    console.log(head);
     totalNode++;
     return tail;
   }
@@ -63,7 +62,7 @@ var ll = (function() {
         curNode = curNode.next;
       }
     }
-    return curNode;
+    return console.log(curNode);
   }
 
   function _remove(number) {
